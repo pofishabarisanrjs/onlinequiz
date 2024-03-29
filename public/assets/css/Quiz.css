@@ -4849,6 +4849,7 @@ label span {
         padding: 10px !important;
         position: relative;
         bottom: 10px;
+        margin-bottom: 20%;
     }
 
     .decisionadded,
@@ -5057,19 +5058,25 @@ label span {
         left: 40px;
     }
     .container{
-        margin-top: 2px;
+        margin-top: 5px;
     }
     .img_size{
         height: 30px;
         width: 50px;
     }
     .youtube-content{
-        font-size: 15px;
+        font-size: 20px;
     }
     .grandientcolor_btn{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
     .text-word{
         font-size: 15px;
+    }
+    .rmt-20{
+        margin-top: 20px;
+    }
+    .rmt-20 p{
+        text-align: center;
     }
 }
