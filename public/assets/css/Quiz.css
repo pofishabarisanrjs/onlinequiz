@@ -4882,11 +4882,11 @@ label span {
     }
 
     .heading_center {
-        font-size: 20px !important;
+        font-size: 17px !important;
     }
 
     .column-name {
-        font-size: 17px !important;
+        font-size: 15px !important;
     }
 
     .pad-30 {
@@ -4963,7 +4963,7 @@ label span {
     }
 
     .the_text_blk h2 {
-        font-size: 15px !important;
+        font-size: 17px !important;
     }
 
     .the_text_blk p {
@@ -5039,7 +5039,7 @@ label span {
         display: none;
     }
     .input-form-container{
-        margin-bottom: 50px !important;
+        margin-bottom: 30% !important;
     }
     .card-list{
         margin-bottom: 30px !important;
@@ -5068,5 +5068,8 @@ label span {
     }
     .grandientcolor_btn{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .text-word{
+        font-size: 15px;
     }
 }
