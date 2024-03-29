@@ -157,3 +157,81 @@ function toggleCheckbox(labelId) {
 
   window.addEventListener('scroll', setActiveSection);
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+   document.querySelector('.hidden_image').classList.remove('hidden_image');
+  const sections = document.querySelectorAll('.section');
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
+
+  // Function to scroll to the previous section
+  function scrollToPreviousSection() {
+    const currentSectionIndex = Array.from(sections).findIndex(section => {
+      const rect = section.getBoundingClientRect();
+      return rect.bottom > 0 && rect.top < window.innerHeight / 2;
+    });
+
+    if (currentSectionIndex > 0) {
+      const prevSection = sections[currentSectionIndex - 1];
+      prevSection.scrollIntoView({ behavior: 'smooth' });
+      updateUrl(prevSection);
+    }
+  }
+
+  // Function to scroll to the next section
+  function scrollToNextSection() {
+    const currentSectionIndex = Array.from(sections).findIndex(section => {
+      const rect = section.getBoundingClientRect();
+      return rect.bottom > 0 && rect.top < window.innerHeight / 2;
+    });
+
+    if (currentSectionIndex < sections.length - 1) {
+      const nextSection = sections[currentSectionIndex + 1];
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+      updateUrl(nextSection);
+    }
+  }
+
+  
+  // Function to update URL hash based on section
+  function updateUrl(section) {
+    const sectionId = section.getAttribute('id');
+    window.history.replaceState(null, null, `#${sectionId}`);
+  }
+
+  // Function to handle scrolling and update URL hash
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        updateUrl(section);
+        return;
+      }
+    });
+
+    // Change arrow icons based on scroll direction
+    if (scrollPosition > prevScrollPosition) {
+      nextButton.classList.remove('up-arrow');
+    } else {
+      nextButton.classList.add('up-arrow');
+    }
+    prevScrollPosition = scrollPosition;
+  }
+
+  let prevScrollPosition = window.scrollY;
+
+  // Attach click event listeners to previous and next buttons
+  prevButton.addEventListener('click', scrollToPreviousSection);
+  nextButton.addEventListener('click', scrollToNextSection);
+
+  // Listen for scroll events and update URL hash
+  window.addEventListener('scroll', handleScroll);
+});
+

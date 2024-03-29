@@ -69,6 +69,28 @@
 .up-arrow {
     transform: rotate(-180deg);
 }
+/* Positioning for the arrow buttons */
+#prevButton, #nextButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #nextButton {
+    right: 70px;
+  }
+  
+  /* Rotate arrows based on scroll direction */
+  .up-arrow {
+    transform: rotate(180deg);
+  }
 
 .ml-10 {
     margin-left: 30px;
@@ -3110,6 +3132,10 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 #ransomware_sim,
@@ -4557,7 +4583,9 @@ label span {
         top: 0px;
     }
 }
-
+.hidden_image{
+    visibility: hidden;
+}
 @media(max-width:768px) {
     .home-process {
         padding-bottom: 50px;
@@ -4967,5 +4995,10 @@ label span {
     .btn-change {
         bottom: 70px;
     }
-
+    #prevButton, #nextButton{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
 }
