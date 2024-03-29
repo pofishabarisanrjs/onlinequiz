@@ -4807,7 +4807,7 @@ label span {
         padding: 10px !important;
         position: relative;
         bottom: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         margin-top: 20px;
     }
 
@@ -5003,5 +5003,17 @@ label span {
     }
     .arrow{
         display: none;
+    }
+    .input-form-container{
+        margin-bottom: 50px !important;
+    }
+    .card-list{
+        margin-bottom: 30px !important;
+    }
+    .card{
+        padding: 3%;
+    }
+    .pos-ab{
+        position: absolute;
     }
 }
