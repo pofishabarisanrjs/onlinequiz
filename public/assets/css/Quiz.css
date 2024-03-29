@@ -5016,4 +5016,7 @@ label span {
     .pos-ab{
         position: absolute;
     }
+    .img_text_column_cs .the_text_blk{
+        justify-content: flex-start;
+    }
 }
