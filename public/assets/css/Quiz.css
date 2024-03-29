@@ -96,14 +96,6 @@
     margin-left: 30px;
 }
 
-@media (max-width: 575.98px) {
-
-    .footer__information-emails,
-    .footer__information-address {
-        justify-content: center !important;
-    }
-}
-
 .home-slide__subtitle {
     padding-left: 7px;
 }
@@ -4744,6 +4736,18 @@ label span {
     }
 }
 
+
+@media (max-width: 575.98px) {
+
+    .footer__information-emails,
+    .footer__information-address {
+        justify-content: center !important;
+    }
+    .card{
+        min-width: 100%;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .about-us__container {
         padding: 50px !important;
@@ -5018,5 +5022,10 @@ label span {
     }
     .img_text_column_cs .the_text_blk{
         justify-content: flex-start;
+    }
+    .footerlogostyle{
+        top: 0px;
+        margin: 30px !important;
+        position: relative;
     }
 }
