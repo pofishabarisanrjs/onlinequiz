@@ -4806,6 +4806,7 @@ label span {
     .footer-section {
         padding: 10px !important;
         position: relative;
+        bottom: 10px;
     }
 
     .decisionadded,
