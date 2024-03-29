@@ -4849,7 +4849,7 @@ label span {
         padding: 10px !important;
         position: relative;
         bottom: 10px;
-        margin-bottom: 20%;
+        margin-bottom: 15%;
     }
 
     .decisionadded,
@@ -5052,7 +5052,7 @@ label span {
         justify-content: flex-start;
     }
     .submitbtn_absol{
-        left: 15%;
+        left: 25%;
     }
     .footerlogostyle{
         left: 40px;
@@ -5078,5 +5078,8 @@ label span {
     }
     .rmt-20 p{
         text-align: center;
+    }
+    .rmt-50{
+        margin-top: 127px;
     }
 }
