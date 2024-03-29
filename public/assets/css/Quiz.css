@@ -267,8 +267,10 @@ body {
     }
 
     .additional_info img {
-        width: 20px;
-        height: 20px;
+        min-width: 10px;
+        min-height: 10px;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -2194,6 +2196,7 @@ body .is-layout-grid>* {
     display: flex;
     column-gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -4796,11 +4799,7 @@ label span {
         padding: 50px !important;
     }
 
-    .content_ul_listings h2 {
-        margin-bottom: 0 !important;
-    }
-
-    .youtube-content {
+   .youtube-content {
         font-size: 20px;
     }
 
@@ -4825,9 +4824,11 @@ label span {
     }
 
     .content_ul_listings h2 {
-        font-size: 16px !important;
+        font-size: 17px !important;
         text-align: center;
         margin: 0 !important;
+        margin-bottom: 2% !important;
+        margin-top: 10px !important;
     }
 
     .btn_margin {
@@ -4837,12 +4838,6 @@ label span {
     .form-container {
         padding-left: 10px !important;
         padding-right: 10px !important;
-    }
-
-    .content_ul_listings h2 {
-        margin-bottom: 2% !important;
-        margin-top: 10px !important;
-        text-align: center;
     }
 
     #cio_been_hit .gradient_color_expand,
@@ -4977,7 +4972,7 @@ label span {
     }
 
     .column-name {
-        line-height: 20px;
+        line-height: 30px;
     }
 
     .mt-5 {
@@ -5063,5 +5058,15 @@ label span {
     }
     .container{
         margin-top: 2px;
+    }
+    .img_size{
+        height: 30px;
+        width: 50px;
+    }
+    .youtube-content{
+        font-size: 15px;
+    }
+    .grandientcolor_btn{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
 }
