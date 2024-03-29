@@ -5050,6 +5050,7 @@ label span {
     }
     .img_text_column_cs .the_text_blk{
         justify-content: flex-start;
+        margin-bottom: 50px;
     }
     .submitbtn_absol{
         left: 25%;
