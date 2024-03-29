@@ -4044,7 +4044,7 @@ ol>li::marker {
     }
 
     .bullet-column {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .the_img_blk img {
@@ -4613,7 +4613,7 @@ label span {
     }
 
     .row_flex_start label {
-        font-size: 15px !important;
+        font-size: 20px;
     }
 
     .form-container {
@@ -4671,7 +4671,7 @@ label span {
     .column-name,
     .text-word,
     .font-20 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .youtube-content {
@@ -4722,6 +4722,9 @@ label span {
     }
     .footer-section {
         padding: 30px;
+        position: relative;
+        bottom: 10px;
+        margin-top: 20px;
     }
     .col-reverse {
         flex-direction: column-reverse;
@@ -4733,6 +4736,46 @@ label span {
 
     .pos_absoulte_btn {
         position: static;
+    }
+    #prevButton, #nextButton{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    .row_flex_start .box-large{
+        height: 10px;
+        width: 10px;
+    }
+    .container{
+        margin-top: 5px;
+    }
+    
+    .options-flex {
+        margin-left: 10px;
+    }
+    .pos-ab{
+        position: absolute !important;
+    }
+    .submitbtn_absol {
+        position: absolute;
+        left: 30%;
+        bottom: 30%;
+    }
+    .footerlogostyle{
+        top: 0px;
+        margin: 30px !important;
+        position: relative;
+        left: -50px;
+    }
+    .input-form-container{
+        margin-bottom: 50px;
+    }
+    .content-size{
+        font-size: 25px;
+    }
+    .form-colleft, .form-colright{
+        max-width: 100%;
     }
 }
 
@@ -4811,8 +4854,6 @@ label span {
         padding: 10px !important;
         position: relative;
         bottom: 10px;
-        margin-bottom: 50px;
-        margin-top: 20px;
     }
 
     .decisionadded,
@@ -4963,17 +5004,11 @@ label span {
     .rmt-10 {
         margin-top: 10px;
     }
-
-    .container {
-        margin-top: 0px;
-    }
-
     .reverseresponsive.img_text_column_cs {
         padding: 0px 20px;
     }
-
-    .options-flex {
-        margin-left: 10px;
+    .row_flex_start label{
+        font-size: 15px !important;
     }
 
     .row_contentus_ulk {
@@ -5017,15 +5052,16 @@ label span {
     .card{
         padding: 3%;
     }
-    .pos-ab{
-        position: absolute;
-    }
     .img_text_column_cs .the_text_blk{
         justify-content: flex-start;
     }
+    .submitbtn_absol{
+        left: 15%;
+    }
     .footerlogostyle{
-        top: 0px;
-        margin: 30px !important;
-        position: relative;
+        left: 40px;
+    }
+    .container{
+        margin-top: 2px;
     }
 }
