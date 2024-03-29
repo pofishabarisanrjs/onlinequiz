@@ -5874,7 +5874,7 @@
       setContainer(typeof containerSelector === 'string' ? $(containerSelector)[0] : containerSelector);
       EventEmitter.emit(events.onInitialise);
       displayWarnings();
-      setAPI();
+    //  setAPI();
 
       if (getContainer()) {
         EventEmitter.emit(events.beforeInit);
