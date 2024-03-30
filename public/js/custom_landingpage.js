@@ -16,3 +16,12 @@ var myFullpage = new fullpage('#fullpage', {
 // 			navigationTooltips: ['First page', 'Second page', 'Third and last page']
 		});
 	
+$(document).ready(function() {
+		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false
+	});
+});
