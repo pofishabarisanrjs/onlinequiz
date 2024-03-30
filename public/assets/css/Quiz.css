@@ -3389,7 +3389,6 @@ ol>li::marker {
 }
 
 .footer-section {
-    position: absolute;
     bottom: 0;
     background: linear-gradient(90.07deg, #FFC982 12.6%, #E9926B 87.7%);
     padding: 50px;
