@@ -265,18 +265,7 @@ body {
 
 
 
-@media screen and (max-width: 375px) {
-    .about-us__container {
-        padding: 5px !important;
-    }
 
-    .additional_info img {
-        min-width: 10px;
-        min-height: 10px;
-        width: 30px;
-        height: 30px;
-    }
-}
 
 @media only screen and (max-width: 780px) and (min-width: 426px) {
     .content_ul_listings h2 {
@@ -5200,5 +5189,27 @@ label span {
     }
     .form_label{
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .about-us__container {
+        padding: 5px !important;
+    }
+
+    .additional_info img {
+        min-width: 10px;
+        min-height: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .about-us_down, .about-us_down span{
+        font-size: 15px !important;
+        line-height:15px;
+    }
+    .content_ul_listings h2{
+        font-size: 15px !important;
+    }
+    .row_flex_start label{
+        font-size: 12px !important;
     }
 }
