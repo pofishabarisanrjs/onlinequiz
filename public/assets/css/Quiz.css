@@ -5213,6 +5213,5 @@ label span {
         font-size: 12px !important;
     }
     .z-time, .z-money{
-        margin-top: -5px;
-    }
+display: none;    }
 }
