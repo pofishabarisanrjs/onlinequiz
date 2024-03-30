@@ -3738,7 +3738,9 @@ ol>li::marker {
     text-align: left;
     color: #fff;
 }
-
+.blockmrg{
+    margin-bottom:40px;display:block
+}
 .contact_text {
     font-family: 'Poppins';
     font-size: 25px;
