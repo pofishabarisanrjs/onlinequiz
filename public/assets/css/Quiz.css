@@ -3904,10 +3904,10 @@ ol>li::marker {
     margin-top: 60px;
 }
 
-.pos_absoulte_btn {
+/* .pos_absoulte_btn {
     position: absolute;
     bottom: 100px;
-}
+} */
 
 
 @media (min-width: 1440px) {
@@ -4760,16 +4760,16 @@ label span {
     .pos-ab{
         position: absolute !important;
     }
-    .submitbtn_absol {
+    /* .submitbtn_absol {
         position: absolute;
         left: 30%;
         bottom: 30%;
-    }
+    } */
     .footerlogostyle{
         top: 0px;
         margin: 30px !important;
         position: relative;
-        left: -50px;
+        left: 140px;
     }
     .input-form-container{
         margin-bottom: 50px;
@@ -4779,6 +4779,12 @@ label span {
     }
     .form-colleft, .form-colright{
         max-width: 100%;
+    }
+    .contact_text{
+        text-align: center;
+    }
+    .hr{
+        float: none;
     }
 }
 
