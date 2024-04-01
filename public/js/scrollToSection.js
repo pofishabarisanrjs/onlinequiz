@@ -167,7 +167,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const prevButton = document.getElementById('prevButton');
   const nextButton = document.getElementById('nextButton');
 
-  // Function to scroll to the previous section
+// Check if the browser is Safari
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+console.log(isSafari)
+
+// Function to scroll to the previous section
   function scrollToPreviousSection() {
     const currentSectionIndex = Array.from(sections).findIndex(section => {
       const rect = section.getBoundingClientRect();
@@ -176,7 +180,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentSectionIndex > 0) {
       const prevSection = sections[currentSectionIndex - 1];
-      prevSection.scrollIntoView({ behavior: 'smooth' });
+      if (isSafari) {
+        // Safari doesn't support smooth scrolling by default, so we use a polyfill
+        prevSection.scrollIntoView({ behavior: 'instant' });
+      } else {
+        // For other browsers, smooth scrolling works as usual
+        prevSection.scrollIntoView({ behavior: 'smooth' });
+      }
       updateUrl(prevSection);
     }
   }
@@ -190,7 +200,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentSectionIndex < sections.length - 1) {
       const nextSection = sections[currentSectionIndex + 1];
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+      if (isSafari) {
+        // Safari doesn't support smooth scrolling by default, so we use a polyfill
+        nextSection.scrollIntoView({ behavior: 'instant' });
+      } else {
+        // For other browsers, smooth scrolling works as usual
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
       updateUrl(nextSection);
     }
   }
