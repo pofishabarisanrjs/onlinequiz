@@ -5228,4 +5228,7 @@ label span {
     .footer-section{
         padding: 5px !important;
     }
+    .certificat_img{
+        height: 50%;
+    }
 }
