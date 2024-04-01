@@ -68,7 +68,7 @@
 }
 
 .up-arrow {
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
 }
 /* Positioning for the arrow buttons */
 #prevButton, #nextButton {
@@ -5224,5 +5224,8 @@ label span {
     }
     .youtube-video{
         margin-top: 30px !important ;
+    }
+    .footer-section{
+        padding: 5px !important;
     }
 }
