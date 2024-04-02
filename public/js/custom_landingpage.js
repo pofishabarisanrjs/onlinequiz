@@ -22,33 +22,20 @@ var myFullpage = new fullpage('#quizpage', {
 		e.preventDefault();
 	  });
 	
-	  const quizpageElement = document.getElementById('quizpage');
-
-	  quizpageElement.addEventListener('touchstart', function(event) {
-		// Allow the initial touch to register (e.g., for click events)
-		event.stopPropagation();
-	  
-		let startX = event.touches[0].clientX;
-		let startY = event.touches[0].clientY;
-	  
-		quizpageElement.addEventListener('touchmove', function(moveEvent) {
-		  const deltaX = moveEvent.touches[0].clientX - startX;
-		  const deltaY = moveEvent.touches[0].clientY - startY;
-	  
-		  // Check for significant movement (adjust threshold as needed)
-		  if (Math.abs(deltaX) > 10 || Math.abs(deltaY) > 10) {
-			// Hide the element or perform other actions based on movement
-			quizpageElement.classList.add('hidden');
-			moveEvent.preventDefault(); // Prevent scrolling if desired
-		  }
-		});
-	  
-		// Clean up event listeners after touch ends
-		quizpageElement.addEventListener('touchend', function() {
-		  quizpageElement.removeEventListener('touchmove');
-		});
+	  var startX, startY;
+	
+	  scrollableElement.addEventListener('touchstart', function(e) {
+		var touch = e.touches[0];
+		startX = touch.clientX;
+		startY = touch.clientY;
 	  });
-	  
+	
+	  scrollableElement.addEventListener('touchmove', function(e) {
+		if (Math.abs(startX - e.touches[0].clientX) > 10 ||
+			Math.abs(startY - e.touches[0].clientY) > 10) {
+		  e.preventDefault();
+		}
+	  });
 	
 		$(document).ready(function () {
 			$('.popup-youtube').YouTubePopUp(); // Initialize Magnific Popup for YouTube videos
