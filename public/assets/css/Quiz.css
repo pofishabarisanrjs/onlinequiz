@@ -3199,7 +3199,6 @@ p {
     font-size: 35px;
     line-height: 153%;
     text-transform: capitalize;
-    margin-bottom: 85px;
 }
 
 .badgestyle {
@@ -3854,7 +3853,6 @@ ol>li::marker {
 }
 
 .content_ul_listings h2 {
-    margin-bottom: 40px !important;
     font-family: "Poppins", sans-serif;
 
 }
@@ -4313,7 +4311,7 @@ body.admin-bar {
 .z-time,
 .z-money {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -4325,12 +4323,13 @@ body.admin-bar {
 
 .z-time {
     left: 0;
-    padding-left: 67px;
+    padding-left: 16%;
 }
 
 .z-money {
     right: 0;
-    padding-left: 77px;
+    padding-left: 16%;
+    font-size: 15px;
 }
 
 .youtube-content {
@@ -4584,7 +4583,7 @@ label span {
 .responsive-list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 
     .flex-first {
@@ -4842,6 +4841,12 @@ label span {
     .row_contentus_ulk {
         flex-direction: column;
 
+    }
+    .footer-section{
+        position: absolute;
+    }
+    .responsive-list{
+        flex-wrap: wrap;
     }
 }
 
