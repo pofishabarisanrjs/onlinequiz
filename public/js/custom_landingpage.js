@@ -26,7 +26,12 @@ var myFullpage = new fullpage('#quizpage', {
     formContainer.addEventListener('wheel', function(e) {
         e.stopPropagation(); // Stop the event from bubbling up
     });
-
+	document.addEventListener('touchmove', function(event) {
+		event.preventDefault();
+	}, { passive: false });
+	formContainer.addEventListener('touchmove', function(e) {
+        e.stopPropagation(); // Stop the event from bubbling up
+    });
 	
 		$(document).ready(function () {
 			$('.popup-youtube').YouTubePopUp(); // Initialize Magnific Popup for YouTube videos
