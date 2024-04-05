@@ -15,29 +15,3 @@ var myFullpage = new fullpage('#quizpage', {
 			// 	}
 // 			navigationTooltips: ['First page', 'Second page', 'Third and last page']
 		});
-	  // Disable mouse scroll and swipe gestures for the element with ID 'scrollable'
-	  var scrollableElement = document.getElementById('quizpage');
-
-	  scrollableElement.addEventListener('wheel', function(e) {
-		e.preventDefault();
-	  });
-	
-	  var startX, startY;
-	
-	  scrollableElement.addEventListener('touchstart', function(e) {
-		var touch = e.touches[0];
-		startX = touch.clientX;
-		startY = touch.clientY;
-	  });
-	
-	  scrollableElement.addEventListener('touchmove', function(e) {
-		if (Math.abs(startX - e.touches[0].clientX) > 10 ||
-			Math.abs(startY - e.touches[0].clientY) > 10) {
-		  e.preventDefault();
-		}
-	  });
-	
-		$(document).ready(function () {
-			$('.popup-youtube').YouTubePopUp(); // Initialize Magnific Popup for YouTube videos
-		 });
-   
