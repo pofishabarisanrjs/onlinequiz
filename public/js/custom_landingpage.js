@@ -15,3 +15,20 @@ var myFullpage = new fullpage('#quizpage', {
 			// 	}
 // 			navigationTooltips: ['First page', 'Second page', 'Third and last page']
 		});
+	  // Disable mouse scroll and swipe gestures for the element with ID 'scrollable'
+    // JavaScript to prevent scrolling on the #quizpage section
+    document.getElementById('quizpage').addEventListener('wheel', function(e) {
+        e.preventDefault(); // Prevent default scrolling behavior
+    }, { passive: false }); // Ensure it's not passive to prevent default
+
+    // JavaScript to allow scrolling inside the .form-container
+    var formContainer = document.querySelector('.form-container');
+    formContainer.addEventListener('wheel', function(e) {
+        e.stopPropagation(); // Stop the event from bubbling up
+    });
+
+	
+		$(document).ready(function () {
+			$('.popup-youtube').YouTubePopUp(); // Initialize Magnific Popup for YouTube videos
+		 });
+   
